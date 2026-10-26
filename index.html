@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Alves.Digital | Sites profissionais para o seu negócio</title>
+<meta name="description" content="A Alves.Digital cria landing pages, sites institucionais e sites personalizados. Solicite seu orçamento pelo WhatsApp.">
+<meta name="theme-color" content="#07070a">
+<meta property="og:title" content="Alves.Digital | Sites profissionais para o seu negócio">
+<meta property="og:description" content="Criamos sites modernos, estratégicos e profissionais. Solicite seu orçamento pelo WhatsApp.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2307070a'/%3E%3Cpath d='M16 48L32 16l16 32M23 38h18' fill='none' stroke='%237c5cff' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#07070a; --surface:#111116; --line:rgba(255,255,255,.09);
+  --text:#f5f5f7; --muted:#a1a1ab; --blue:#3d5afe; --violet:#7c5cff;
+  --grad:linear-gradient(120deg,#3d5afe,#7c5cff);
+  --font:"Sora",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--text);font-family:var(--font);line-height:1.65;font-size:16px;overflow-x:hidden;padding-bottom:calc(88px + env(safe-area-inset-bottom,0px))}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1080px,100% - 40px);margin-inline:auto}
+:focus-visible{outline:2px solid var(--violet);outline-offset:3px}
+
+/* fundo */
+.glow{position:fixed;inset:0;z-index:-1;pointer-events:none;background:
+  radial-gradient(600px 400px at 85% -5%,rgba(124,92,255,.28),transparent 70%),
+  radial-gradient(500px 380px at 0% 30%,rgba(61,90,254,.16),transparent 70%)}
+
+/* cabeçalho */
+header{padding:calc(28px + env(safe-area-inset-top,0px)) 0 8px}
+.brand{display:inline-flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.16em;font-size:1.05rem}
+.brand i{width:34px;height:34px;border-radius:10px;background:var(--grad);display:grid;place-items:center;box-shadow:0 0 28px rgba(124,92,255,.5)}
+.brand svg{width:18px;height:18px}
+
+/* hero */
+.hero{padding:56px 0 72px}
+.hero h1{font-size:clamp(2.1rem,8.6vw,4.2rem);line-height:1.08;font-weight:700;letter-spacing:-.03em;max-width:15em}
+.hero p{margin-top:24px;color:var(--muted);font-size:1.05rem;max-width:34em;font-weight:300}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;font-family:inherit;font-weight:600;color:#fff;background:var(--grad);border-radius:999px;padding:17px 30px;font-size:1rem;box-shadow:0 10px 40px -8px rgba(124,92,255,.7),inset 0 1px 0 rgba(255,255,255,.25);transition:transform .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 16px 50px -8px rgba(124,92,255,.9),inset 0 1px 0 rgba(255,255,255,.25)}
+.btn:active{transform:scale(.98)}
+.btn svg{width:20px;height:20px;flex:none}
+.hero .btn{margin-top:36px}
+
+/* mockup do navegador */
+.mock{margin-top:56px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(180deg,#15151b,#0d0d11);padding:14px;max-width:560px;box-shadow:0 30px 80px -30px rgba(124,92,255,.45)}
+.mock .bar{display:flex;gap:6px;margin-bottom:14px}
+.mock .bar b{width:9px;height:9px;border-radius:50%;background:#2a2a33}
+.mock .body{display:grid;gap:10px}
+.mock .l{height:12px;border-radius:6px;background:#23232c}
+.mock .l.big{height:26px;width:70%;background:var(--grad);opacity:.9}
+.mock .row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:6px}
+.mock .row span{height:64px;border-radius:12px;background:#1a1a22;border:1px solid var(--line)}
+
+/* seções */
+section{padding:72px 0}
+h2{font-size:clamp(1.6rem,6vw,2.5rem);line-height:1.15;letter-spacing:-.025em;font-weight:700;max-width:16em}
+.lead{color:var(--muted);margin-top:14px;font-weight:300;max-width:34em}
+.cards{display:grid;gap:16px;margin-top:40px}
+.card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.015));border:1px solid var(--line);border-radius:22px;padding:28px;transition:transform .3s,border-color .3s,box-shadow .3s}
+.card:hover{transform:translateY(-4px);border-color:rgba(124,92,255,.5);box-shadow:0 20px 60px -30px rgba(124,92,255,.7)}
+.ico{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:rgba(124,92,255,.14);border:1px solid rgba(124,92,255,.35);margin-bottom:20px}
+.ico svg{width:24px;height:24px;stroke:#a897ff;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.card h3{font-size:1.15rem;font-weight:600;letter-spacing:-.01em}
+.card p{color:var(--muted);margin-top:8px;font-weight:300;font-size:.97rem}
+
+.perks{list-style:none;margin-top:40px;display:grid;gap:0;border-top:1px solid var(--line)}
+.perks li{display:flex;gap:16px;align-items:center;padding:22px 0;border-bottom:1px solid var(--line);font-weight:400}
+.perks svg{width:22px;height:22px;flex:none;stroke:#7c5cff;fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+
+/* contato final */
+.cta{text-align:center;border:1px solid var(--line);border-radius:28px;padding:56px 24px;background:
+  radial-gradient(500px 260px at 50% 0%,rgba(124,92,255,.25),transparent 70%),var(--surface)}
+.cta h2,.cta .lead{margin-inline:auto}
+.cta .btn{margin-top:32px;width:100%;max-width:380px;padding:20px 28px;font-size:1.1rem}
+
+footer{padding:32px 0 24px;text-align:center;color:#6b6b75;font-size:.85rem}
+
+/* barra fixa no celular */
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:20;padding:12px 20px calc(12px + env(safe-area-inset-bottom,0px));background:linear-gradient(180deg,transparent,rgba(7,7,10,.92) 40%);display:flex;justify-content:center;transform:translateY(120%);transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.dock.show{transform:none}
+.dock .btn{width:100%;max-width:420px;padding:15px 24px}
+
+/* animações */
+@keyframes up{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+.in{opacity:0;animation:up .9s cubic-bezier(.2,.8,.2,1) forwards}
+.d1{animation-delay:.1s}.d2{animation-delay:.25s}.d3{animation-delay:.4s}.d4{animation-delay:.6s}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .8s,transform .8s}
+.rv.on{opacity:1;transform:none}
+@keyframes float{50%{transform:translateY(-8px)}}
+.mock{animation:float 7s ease-in-out infinite}
+
+@media(min-width:760px){
+  .hero{padding:96px 0 110px;display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:center}
+  .mock{margin-top:0}
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .perks{grid-template-columns:1fr 1fr;column-gap:48px}
+  section{padding:96px 0}
+  body{padding-bottom:0}
+  .dock{display:none}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .in,.rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<div class="glow" aria-hidden="true"></div>
+
+<header>
+  <div class="wrap">
+    <a class="brand in" href="#topo" aria-label="Alves.Digital">
+      <i><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19L12 5l7 14M8.5 14h7"/></svg></i>
+      ALVES.DIGITAL
+    </a>
+  </div>
+</header>
+
+<main id="topo">
+  <div class="wrap hero">
+    <div>
+      <h1 class="in d1">Seu negócio merece uma presença digital extraordinária.</h1>
+      <p class="in d2">Criamos sites modernos, estratégicos e profissionais para destacar sua marca, atrair clientes e transformar sua presença na internet.</p>
+      <a class="btn in d3" href="https://wa.me/5571983463104?text=Ol%C3%A1%21%20Vim%20pelo%20seu%20perfil%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20um%20site." target="_blank" rel="noopener noreferrer">
+        Solicitar meu orçamento
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+    <div class="mock in d4" aria-hidden="true">
+      <div class="bar"><b></b><b></b><b></b></div>
+      <div class="body">
+        <div class="l big"></div><div class="l" style="width:90%"></div><div class="l" style="width:55%"></div>
+        <div class="row"><span></span><span></span><span></span></div>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <h2 class="rv">Soluções digitais sob medida</h2>
+      <p class="lead rv">Do primeiro contato ao site no ar, cada projeto é pensado para o seu negócio.</p>
+      <div class="cards">
+        <article class="card rv">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.5 6.6 19.5l1.2-6L3.3 9.3l6.1-.7z"/></svg></div>
+          <h3>Landing Pages</h3>
+          <p>Páginas estratégicas para atrair clientes e gerar contatos.</p>
+        </article>
+        <article class="card rv">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M4 21V5a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v16M14 10h5a1 1 0 0 1 1 1v10M2 21h20M8 8h2M8 12h2M8 16h2"/></svg></div>
+          <h3>Sites Institucionais</h3>
+          <p>Sites profissionais para fortalecer a imagem da empresa.</p>
+        </article>
+        <article class="card rv">
+          <div class="ico"><svg viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></div>
+          <h3>Sites Personalizados</h3>
+          <p>Projetos digitais adaptados às necessidades de cada negócio.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2 class="rv">Por que escolher a Alves.Digital</h2>
+      <ul class="perks">
+        <li class="rv"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Design moderno e exclusivo.</li>
+        <li class="rv"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Experiência otimizada para celulares.</li>
+        <li class="rv"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Navegação rápida e intuitiva.</li>
+        <li class="rv"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Projetos personalizados para cada cliente.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="cta rv">
+        <h2>Vamos tirar seu projeto do papel?</h2>
+        <p class="lead">Entre em contato pelo WhatsApp, conte sua ideia e solicite um orçamento para seu próximo site.</p>
+        <a class="btn" href="https://wa.me/5571983463104?text=Ol%C3%A1%21%20Vim%20pelo%20seu%20perfil%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20um%20site." target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.7-5A8.500 8.500 0 1 1 21 11.5z"/><path d="M9 9.500c.2 2 2.500 4.300 4.800 4.800l1.400-1.300-1.800-1-.9.700c-.8-.4-1.500-1.100-1.900-1.900l.7-.9-1-1.800z"/></svg>
+          Falar pelo WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap">© 2026 Alves.Digital. Todos os direitos reservados.</div></footer>
+
+<div class="dock" id="dock">
+  <a class="btn" href="https://wa.me/5571983463104?text=Ol%C3%A1%21%20Vim%20pelo%20seu%20perfil%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento%20para%20um%20site." target="_blank" rel="noopener noreferrer">Falar pelo WhatsApp</a>
+</div>
+
+<script>
+(function(){
+  var els=document.querySelectorAll('.rv');
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.15});
+    els.forEach(function(el,i){el.style.transitionDelay=(i%3)*90+'ms';io.observe(el)});
+  }else{els.forEach(function(el){el.classList.add('on')})}
+  var dock=document.getElementById('dock');
+  window.addEventListener('scroll',function(){dock.classList.toggle('show',window.scrollY>480)},{passive:true});
+})();
+</script>
+</body>
+</html>
